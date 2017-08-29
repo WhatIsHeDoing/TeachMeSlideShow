@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Chunkfive;
+    src: url("/fonts/Chunkfive.otf") format("opentype");
+}
+
+body,
+html,
+section
+{
+    font-family: Chunkfive, Arial, sans-serif;
+    font-size: 3em;
+}

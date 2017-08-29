@@ -1,0 +1,23 @@
+{
+  "name": "teachmeslideshow",
+  "version": "1.0.0",
+  "description": "Slideshow education!",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "keywords": [
+    "education",
+    "slideshow",
+    "fun"
+  ],
+  "author": "WhatIsHeDoing",
+  "license": "Unlicense",
+  "dependencies": {
+    "reveal.js": "3.5.*"
+  },
+  "devDependencies": {
+    "browser-sync": "2.18.*",
+    "gulp": "3.9.*"
+  }
+}
