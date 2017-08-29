@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 	<head>
         <title>Teach Me SlideShow</title>
+        <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
         <link rel="stylesheet" href="/node_modules/reveal.js/css/reveal.css">
         <link rel="stylesheet" href="/index.css">
         <script defer src="/node_modules/reveal.js/js/reveal.js"></script>
@@ -10,27 +12,41 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section>
-                    Welcome to Teach Me SlideShow!
+                <section
+                    data-background-color="#ff006D">
+                        <h1>Alphabet Animals!</h1>
                 </section>
 
                 <section
                     data-background-image="/img/aardvark.jpg"
                     data-background-transition="concave">
-                        A a
+                        <p class="animated pulse infinite">A a</p>
                 </section>
 
                 <section
                     data-background-image="/img/badger.jpg"
                     data-background-transition="slide">
-                        B b
+                        <p class="animated fadeIn infinite">B b</p>
                 </section>
 
                 <section
-                data-background-image="/img/cat.gif"
-                data-background-transition="fade">
-                    C c
-            </section>
+                    data-background-image="/img/cat.gif"
+                    data-background-transition="convex">
+                        <p class="animated jello infinite">C c</p>
+                </section>
+
+                <section
+                    data-background-transition="fade"
+                    data-background-video="/video/dog.mp4"
+                    data-background-video-loop="true">
+                        <p class="animated rubberBand infinite">D d</p>
+                </section>
+
+                <section
+                    data-background-image="/img/elephant.jpg"
+                    data-background-transition="slide">
+                        <p class="animated tada infinite">E e</p>
+                </section>
 			</div>
 		</div>
 	</body>

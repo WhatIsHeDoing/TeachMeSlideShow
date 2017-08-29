@@ -21,6 +21,7 @@ Don't have ``npm`` available? Then simply install it via:
 
 As ever, this was built incredibly easily using the following open source and free tech:
 
+* Animation: [Animate.css](https://daneden.github.io/animate.css/)
 * Editor: [Visual Studio Code](https://code.visualstudio.com/)
 * Font: Chunkfive via [Font Squirrel](https://www.fontsquirrel.com/fonts/chunkfive)
 * Image compression: [TinyPNG](https://tinypng.com/)
@@ -34,3 +35,5 @@ A _huge_ thanks to the following for the images used throughout this example sli
 * Aardvark: [AtoZpictures](http://www.atozpictures.com/aardvark-pictures)
 * Badger: [HD Wallpapers](http://www.hdwallpapersfreedownload.com/badger-free-wallpapers/)
 * Cat: [Reddit](https://www.reddit.com/r/Cinemagraphs/comments/3rd8eb/cat_sleeping_on_a_chair/)
+* Dog: [Videezy](https://www.videezy.com/animals-and-wildlife/2161-good-dog-stock-video)
+* Elephant: [wallpapers-xs](http://wallpapers-xs.blogspot.co.uk/2012/08/elephant-wallpapers.html)

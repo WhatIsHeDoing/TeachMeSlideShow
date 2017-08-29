@@ -4,9 +4,19 @@
 }
 
 body,
+h1,
 html,
+p,
 section
 {
     font-family: Chunkfive, Arial, sans-serif;
-    font-size: 3em;
+    font-size: 5em;
+}
+
+section h1 {
+    font-size: 0.5em !important;
+}
+
+section p {
+    color: rgba(255, 255, 255, .7);
 }
