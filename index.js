@@ -6,15 +6,28 @@ function randomArrayElement(arr) {
     return arr[randomNumberBetween(0, arr.length - 1)];
 }
 
-function selectRandomBackground() {
-    var selector = "data-background-image-random";
+function isRandomTrue() {
+    return Math.random() >= 0.5;
+}
 
+var imageSelector = "data-background-image-random";
+var videoSelector = "data-background-video";
+
+function selectRandomBackground() {
     document
-        .querySelectorAll("[" + selector + "]")
+        .querySelectorAll("[" + imageSelector + "]")
         .forEach(function(element) {
+            // Randomly use the video if one is available.
+            if (isRandomTrue() && element.getAttribute(videoSelector)) {
+                element.removeAttribute(imageSelector);
+                return;                    
+            }
+
+            element.removeAttribute(videoSelector);
+
             element.setAttribute(
                 "data-background-image",
-                randomArrayElement(element.getAttribute(selector).split(",")));
+                randomArrayElement(element.getAttribute(imageSelector).split(",")));
         });
 }
 
