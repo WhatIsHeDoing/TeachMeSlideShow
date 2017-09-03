@@ -9,6 +9,7 @@ html,
 p,
 section
 {
+    color: #fff;
     font-family: Chunkfive, Arial, sans-serif;
     font-size: 5em;
 }
@@ -18,5 +19,28 @@ section h1 {
 }
 
 section p {
+    -webkit-text-stroke: 2px rgba(50, 50, 50, .7);
     color: rgba(255, 255, 255, .7);
+}
+
+.reveal .controls .navigate-left {
+    border-right-color: rgba(255, 255, 255, .7);
+    transition: border-right-color 0.3s ease-in;
+}
+
+.reveal .controls .navigate-left:hover {
+    border-right-color: rgba(0, 0, 0, .7);
+}
+
+.reveal .controls .navigate-right {
+    border-left-color: rgba(255, 255, 255, .7);
+    transition: border-left-color 0.3s ease-in;
+}
+
+.reveal .controls .navigate-right:hover {
+    border-left-color: rgba(0, 0, 0, .7);
+}
+
+.reveal.overview {
+    background-color: #ff006d;
 }
