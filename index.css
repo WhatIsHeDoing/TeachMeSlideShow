@@ -1,6 +1,6 @@
 @font-face {
     font-family: Chunkfive;
-    src: url("/fonts/Chunkfive.otf") format("opentype");
+    src: url("fonts/Chunkfive.otf") format("opentype");
 }
 
 body,

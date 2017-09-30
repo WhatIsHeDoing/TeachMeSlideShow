@@ -4,7 +4,7 @@ Learning through fun, interactive slideshows!
 
 ## Instructions
 
-Simply run ``npm install ; npm run gulp`` to fire up the slideshow within your default browser.
+Simply run ``npm install ; npm run gulp serve`` to fire up the slideshow within your default browser.
 
 Any changes you make to the slideshow within the HTML and JavaScript files will automagically reload
 the browser, so please play with it and start making your own slideshows :)

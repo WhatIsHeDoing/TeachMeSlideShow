@@ -1,0 +1,38 @@
+{
+    "autoprefixer": {
+        "add": true,
+        "browsers": [
+            "> 1%",
+            "last 2 versions"
+        ]
+    },
+    "calc": true,
+    "colormin": true,
+    "convertValues": true,
+    "core": true,
+    "discardComments": true,
+    "discardDuplicates": true,
+    "discardEmpty": true,
+    "discardOverridden": true,
+    "discardUnused": true,
+    "filterOptimiser": true,
+    "functionOptimiser": true,
+    "mergeIdents": true,
+    "mergeLonghand": true,
+    "mergeRules": true,
+    "minifyFontValues": true,
+    "minifyGradients": true,
+    "minifyParams": true,
+    "minifySelectors": true,
+    "normalizeCharset": true,
+    "normalizeUrl": true,
+    "orderedValues": true,
+    "reduceBackgroundRepeat": true,
+    "reduceIdents": true,
+    "reduceInitial": true,
+    "reducePositions": true,
+    "reduceTimingFunctions": true,
+    "reduceTransforms": true,
+    "svgo": true,
+    "uniqueSelectors": true
+}
