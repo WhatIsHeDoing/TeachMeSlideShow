@@ -1,5 +1,7 @@
 # Teach Me SlideShow
 
+[![Known Vulnerabilities](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow/badge.svg)](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow)
+
 Learning through fun, interactive slideshows!
 
 ## Instructions
