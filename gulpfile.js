@@ -13,8 +13,9 @@ const plugins = require("gulp-load-plugins")();
 const paths = {
     css: "*.css",
     dist: "dist/",
-    js: "index.js",
-    html: "*.html"
+    html: "*.html",
+    img: "img/",
+    js: "index.js"
 };
 
 const tasks = {
@@ -34,7 +35,7 @@ gulp.task(tasks.serve, () => {
     });
 
     gulp
-        .watch([paths.css, paths.html, paths.js])
+        .watch([paths.css, paths.html, paths.img, paths.js])
         .on("change", browserSync.reload);
 });
 
@@ -86,7 +87,6 @@ gulp.task(tasks.css, () => gulp
     .src(paths.css)
     .pipe(plugins.cssnano(configs.cssnano))
     .pipe(gulp.dest(paths.dist)));
-
 
 gulp.task(tasks.js, () => gulp
     .src(paths.js)
