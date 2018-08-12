@@ -13,6 +13,7 @@ const plugins = require("gulp-load-plugins")();
 const paths = {
     css: "*.css",
     dist: "dist/",
+    fonts: "*.otf",
     html: "*.html",
     img: "img/",
     js: "index.js"
@@ -21,6 +22,7 @@ const paths = {
 const tasks = {
     css: "css",
     default: "default",
+    fonts: "fonts",
     html: "html",
     images: "images",
     js: "js",
@@ -43,6 +45,7 @@ gulp.task(
     tasks.default,
     [
         tasks.css,
+        tasks.fonts,
         tasks.html,
         tasks.images,
         tasks.js
@@ -77,6 +80,10 @@ gulp.task(tasks.images, () => {
         }))
         .pipe(gulp.dest(dest));
 });
+
+gulp.task(tasks.fonts, () => gulp
+    .src(paths.fonts)
+    .pipe(gulp.dest(paths.dist)));
 
 gulp.task(tasks.html, () => gulp
     .src(paths.html)
