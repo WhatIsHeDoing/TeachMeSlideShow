@@ -3,7 +3,7 @@
  */
 
 const cacheKey = "network-or-cache"
-const timeout = 400
+const timeout = 50000
 
 // Do not pre-cache on install.
 self.addEventListener("install", event => fetch(event.request))
