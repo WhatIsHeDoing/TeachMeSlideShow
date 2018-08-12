@@ -68,7 +68,7 @@ Reveal.initialize({
     controls: true,
     help: true,
     hideAddressBar: true,
-    history: true,
+    history: false,
     loop: true,
     mouseWheel: true,
     overview: true,
