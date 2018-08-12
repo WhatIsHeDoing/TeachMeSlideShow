@@ -107,7 +107,10 @@ gulp.task(tasks.help, () => plugins.taskListing());
 
 gulp.task(tasks.js, () => gulp
     .src(paths.js)
-    .pipe(plugins.uglify())
+    .pipe(plugins.uglifyes({
+        ecma: 6,
+        mangle: false
+    }))
     .pipe(gulp.dest(paths.dist)))
 
 gulp.task(tasks.video, () => gulp
