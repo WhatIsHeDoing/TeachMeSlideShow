@@ -111,5 +111,5 @@ gulp.task(tasks.js, () => gulp
     .pipe(gulp.dest(paths.dist)))
 
 gulp.task(tasks.video, () => gulp
-    .src(paths.videos)
-    .pipe(gulp.dest(paths.dist)))
+    .src(paths.videos + "**/*")
+    .pipe(gulp.dest(paths.dist + paths.videos)))
