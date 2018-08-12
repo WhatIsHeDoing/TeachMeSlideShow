@@ -78,7 +78,5 @@ Reveal.initialize({
 })
 
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register('service-worker.js', {
-        scope: './img/'
-    })
+    navigator.serviceWorker.register("service-worker.js")
 }
