@@ -1,0 +1,20 @@
+{
+    "background_color": "#ff006d",
+    "description": "A slideshow of randomised animals for each letter of the alphabet.",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/img/icons/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/icons/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "name": "Animal Alphabet",
+    "short_name": "Animal Alphabet",
+    "start_url": "."
+}

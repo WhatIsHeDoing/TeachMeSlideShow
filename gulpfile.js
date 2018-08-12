@@ -11,17 +11,17 @@ const configs = {
 // Import all gulp plugins as a single object.
 const plugins = require("gulp-load-plugins")()
 
-const paths = {
+const paths = Object.freeze({
     css: "*.css",
     dist: "dist/",
     fonts: "*.otf",
     html: "*.html",
     img: "img/",
-    js: "index.js",
+    js: "*.js",
     videos: "video/"
-}
+})
 
-const tasks = {
+const tasks = Object.freeze({
     css: "css",
     clean: "clean",
     default: "default",
@@ -30,9 +30,10 @@ const tasks = {
     html: "html",
     images: "images",
     js: "js",
+    manifest: "manifest",
     serve: "serve",
     video: "video"
-}
+})
 
 gulp.task(tasks.clean, () => rimraf(paths.dist, [], () => "Distribution cleaned!"))
 
@@ -56,6 +57,7 @@ gulp.task(
         tasks.html,
         tasks.images,
         tasks.js,
+        tasks.manifest,
         tasks.video
     ])
 
@@ -87,7 +89,7 @@ gulp.task(tasks.images, () => {
             ]
         }))
         .pipe(gulp.dest(dest))
-});
+})
 
 gulp.task(tasks.fonts, () => gulp
     .src(paths.fonts)
@@ -103,7 +105,7 @@ gulp.task(tasks.css, () => gulp
     .pipe(plugins.cssnano(configs.cssnano))
     .pipe(gulp.dest(paths.dist)))
 
-gulp.task(tasks.help, () => plugins.taskListing());
+gulp.task(tasks.help, () => plugins.taskListing())
 
 gulp.task(tasks.js, () => gulp
     .src(paths.js)
@@ -112,6 +114,19 @@ gulp.task(tasks.js, () => gulp
         mangle: false
     }))
     .pipe(gulp.dest(paths.dist)))
+
+gulp.task(tasks.manifest, () => {
+    gulp
+        .src("img/icons/*")
+        .pipe(gulp.dest(paths.dist + "img/icons/"))
+
+    return gulp
+        .src([
+            "favicon.ico",
+            "manifest.json"
+        ])
+        .pipe(gulp.dest(paths.dist))
+});
 
 gulp.task(tasks.video, () => gulp
     .src(paths.videos + "**/*")
