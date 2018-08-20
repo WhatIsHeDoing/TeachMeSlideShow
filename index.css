@@ -14,13 +14,24 @@ section
     font-size: 5em;
 }
 
-section h1 {
-    font-size: 0.5em !important;
+.reveal section h1 {
+    font-size: 0.5em;
 }
 
-section p {
-    -webkit-text-stroke: 2px rgba(50, 50, 50, .7);
+.reveal section p {
     color: rgba(255, 255, 255, .7);
+    -webkit-text-stroke: 2px rgba(50, 50, 50, .7);
+}
+
+.reveal section p a {
+    color: #000;
+}
+
+.reveal section.details p {
+    color: #fff;
+    font-size: 0.2em;
+    margin: 0.3em 0;
+    -webkit-text-stroke: 0;
 }
 
 .reveal .controls .navigate-left {

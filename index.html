@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-        <title>Alphabet Animals!</title>
+        <title>Alphabet Slideshows!</title>
         <meta charset="UTF-8">
 
-        <!-- Styling and interaction. -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
-        <link rel="stylesheet" href="index.css">
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
-        <script defer src="index.js"></script>
+        <!-- This is quite useless with JavaScript, but at least it can look pretty :) -->
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css">
+            <link rel="stylesheet" href="index.css">
+        </noscript>
 
-        <!-- Progressive web app. -->
+        <!-- Progressive web app settings. -->
         <link rel="manifest" href="manifest.json">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="icon" type="image/png" href="img/icons/icon-192.png" sizes="192x192">
@@ -33,19 +33,19 @@
                 </section>
 
                 <section
-                    data-background-image-random="badger,bear"
+                    data-background-image-random="badger,bear,bee"
                     data-background-transition="slide">
                         <p class="animated fadeIn infinite">B b</p>
                 </section>
 
                 <section
-                    data-background-image-random="cat,cheetah"
+                    data-background-image-random="cat,catepillar,cheetah"
                     data-background-transition="convex">
                         <p class="animated jello infinite">C c</p>
                 </section>
 
                 <section
-                    data-background-image-random="dolphin,duck"
+                    data-background-image-random="dolphin,dog,duck"
                     data-background-transition="fade">
                         <p class="animated rubberBand infinite">D d</p>
                 </section>
@@ -181,7 +181,35 @@
                     data-background-transition="convex">
                         <p class="animated bounce infinite">Z z</p>
                 </section>
+
+                <section
+                    class="details"
+                    data-background-color="#ff006d">
+                        <p>Thanks for playing!</p>
+                        <p>Try again to see new animals :)</p>
+                </section>
+
+                <section
+                    class="details"
+                    data-background-color="#ff006d">
+                        <p>
+                            A huge thanks to
+                            <a href="https://pixabay.com/" target="blank">Pixabay</a>
+                            for the fantastic photos.
+                        </p>
+
+                        <p>
+                            Now why not try and create your own
+                            <a href="https://github.com/WhatIsHeDoing/TeachMeSlideShow"
+                                target="blank">slideshows</a>?
+                        </p>
+                </section>
             </div>
-		</div>
+        </div>
+
+        <!-- Deferred loading of styles and interaction. -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/loadCSS/2.0.1/loadCSS.min.js"></script>
+        <script defer src="index.js"></script>
 	</body>
 </html>

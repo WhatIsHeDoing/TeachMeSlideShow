@@ -8,7 +8,8 @@ const timeout = 50000
 // Do not pre-cache on install.
 self.addEventListener("install", event => fetch(event.request))
 
-// On fetch, use cache only strategy.
+// On fetch, use cache but update the entry with the latest contents from the server.
+// Try network and if it fails, go for the cached copy.
 self.addEventListener("fetch", event => event
     .respondWith(fromNetwork(event.request, timeout)
     .catch(() => fromCache(event.request))))

@@ -64,6 +64,20 @@ const selectRandomBackground = () => document
 
 selectRandomBackground()
 
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+}
+
+loadCSS(
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css",
+    document.getElementsByTagName("script")[0]);
+
+loadCSS(
+    "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css",
+    document.getElementsByTagName("script")[0]);
+
+loadCSS("/index.css", document.getElementsByTagName("script")[0]);
+
 Reveal.initialize({
     controls: true,
     help: true,
@@ -76,7 +90,3 @@ Reveal.initialize({
     touch: true,
     viewDistance: 2
 })
-
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("service-worker.js")
-}

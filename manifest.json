@@ -1,6 +1,6 @@
 {
     "background_color": "#ff006d",
-    "description": "A slideshow of randomised animals for each letter of the alphabet.",
+    "description": "Slideshows of randomised things for each letter of the alphabet.",
     "display": "standalone",
     "icons": [
         {
@@ -14,7 +14,7 @@
             "sizes": "512x512"
         }
     ],
-    "name": "Animal Alphabet",
-    "short_name": "Animal Alphabet",
+    "name": "Alphabet Slideshows!",
+    "short_name": "Alphabets",
     "start_url": "/"
 }
