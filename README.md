@@ -4,6 +4,8 @@
 
 Learning through fun, interactive slideshows! https://alphabetslidesho.ws/
 
+![Preview animation](/preview.gif)
+
 ## Instructions
 
 Simply run ``npm install ; npm start`` to fire up the slideshow within your default browser.
@@ -14,7 +16,7 @@ the browser, so please play with it and start making your own slideshows :)
 Don't have ``npm`` available? Then simply install it via:
 
 * Website: [nodejs.org](https://nodejs.org/en/)
-* [Chocolatey](https://chocolatey.org/) for Windows: ``choco install node.js``
+* [Chocolatey](https://chocolatey.org/) for Windows: ``choco install nodejs-lts``
 * [Fedora](https://getfedora.org/) Linux: ``dnf install node.js``
 
 ## Thanks
@@ -27,12 +29,9 @@ As ever, this was built incredibly easily using the following open source and fr
 * Editor: [Visual Studio Code](https://code.visualstudio.com/)
 * Favicon: [Favicon.io](https://favicon.io/)
 * Font: Chunkfive via [Font Squirrel](https://www.fontsquirrel.com/fonts/chunkfive)
-* Image compression: [TinyPNG](https://tinypng.com/)
+* Preview GIF: [LICEcap](https://www.cockos.com/licecap/)
 * Slideshow: [reveal.js](http://lab.hakim.se/reveal-js/)
-* Search: [DuckDuckGo](https://duckduckgo.com/?q=cat+free+animal+photography&t=ffab&atb=v73-6&iar=images&iaf=size%3Aimagesize-wallpaper&iax=1&ia=images)
 
 ### Image Credits
 
-A _huge_ thanks to [Pixabay][pixabay] for following images used throughout the slideshow.
-
-[pixabay]: https://pixabay.com/
+A _huge_ thanks to [Pixabay](https://pixabay.com/) for following images used throughout the slideshow.
