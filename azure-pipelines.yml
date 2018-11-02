@@ -16,3 +16,9 @@ steps:
     npm install
     gulp default --gulpfile gulpfile.js
   displayName: 'npm install and run gulp'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: dist'
+  inputs:
+    PathtoPublish: 'dist'
+  timeoutInMinutes: 10
