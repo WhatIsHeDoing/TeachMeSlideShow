@@ -1,6 +1,6 @@
 # Teach Me SlideShow
 
-[![Known Vulnerabilities](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow/badge.svg)](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow)
+[![Known Vulnerabilities](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow/badge.svg)](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow) [![Greenkeeper badge](https://badges.greenkeeper.io/WhatIsHeDoing/TeachMeSlideShow.svg)](https://greenkeeper.io/)
 
 Learning through fun, interactive slideshows! https://alphabetslidesho.ws/
 

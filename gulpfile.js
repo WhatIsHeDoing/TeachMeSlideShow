@@ -1,7 +1,6 @@
 const gulp = require("gulp")
 const browserSync = require("browser-sync").create()
 const imageminMozjpeg = require("imagemin-mozjpeg")
-const rimraf = require("rimraf")
 
 const configs = {
     cssnano: require("./config/cssnano.json"),
@@ -23,10 +22,8 @@ const paths = Object.freeze({
 
 const tasks = Object.freeze({
     css: "css",
-    clean: "clean",
     default: "default",
     fonts: "fonts",
-    help: "help",
     html: "html",
     images: "images",
     js: "js",
@@ -34,8 +31,6 @@ const tasks = Object.freeze({
     serve: "serve",
     video: "video"
 })
-
-gulp.task(tasks.clean, () => rimraf(paths.dist, [], () => "Distribution cleaned!"))
 
 gulp.task(tasks.serve, () => {
     browserSync.init({
@@ -48,18 +43,6 @@ gulp.task(tasks.serve, () => {
         .watch([paths.css, paths.html, paths.img, paths.js])
         .on("change", browserSync.reload)
 })
-
-gulp.task(
-    tasks.default,
-    [
-        tasks.css,
-        tasks.fonts,
-        tasks.html,
-        tasks.images,
-        tasks.js,
-        tasks.manifest,
-        tasks.video
-    ])
 
 gulp.task(tasks.images, () => {
     const dest = paths.dist + "img"
@@ -105,8 +88,6 @@ gulp.task(tasks.css, () => gulp
     .pipe(plugins.cssnano(configs.cssnano))
     .pipe(gulp.dest(paths.dist)))
 
-gulp.task(tasks.help, () => plugins.taskListing())
-
 gulp.task(tasks.js, () => gulp
     .src(paths.js)
     .pipe(plugins.uglifyes({
@@ -131,3 +112,15 @@ gulp.task(tasks.manifest, () => {
 gulp.task(tasks.video, () => gulp
     .src(paths.videos + "**/*")
     .pipe(gulp.dest(paths.dist + paths.videos)))
+
+gulp.task(
+    tasks.default,
+    gulp.series(
+        tasks.css,
+        tasks.fonts,
+        tasks.html,
+        tasks.images,
+        tasks.js,
+        tasks.manifest,
+        tasks.video
+    ))
