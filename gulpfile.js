@@ -44,18 +44,6 @@ gulp.task(tasks.serve, () => {
         .on("change", browserSync.reload)
 })
 
-gulp.task(
-    tasks.default,
-    [
-        tasks.css,
-        tasks.fonts,
-        tasks.html,
-        tasks.images,
-        tasks.js,
-        tasks.manifest,
-        tasks.video
-    ])
-
 gulp.task(tasks.images, () => {
     const dest = paths.dist + "img"
 
@@ -124,3 +112,15 @@ gulp.task(tasks.manifest, () => {
 gulp.task(tasks.video, () => gulp
     .src(paths.videos + "**/*")
     .pipe(gulp.dest(paths.dist + paths.videos)))
+
+gulp.task(
+    tasks.default,
+    gulp.series(
+        tasks.css,
+        tasks.fonts,
+        tasks.html,
+        tasks.images,
+        tasks.js,
+        tasks.manifest,
+        tasks.video
+    ))
