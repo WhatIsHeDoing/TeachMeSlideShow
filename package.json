@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-    "start": "gulp serve"
+    "start": "gulp serve",
+    "test": "gulp"
   },
   "keywords": [
     "education",
