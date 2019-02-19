@@ -52,7 +52,7 @@ gulp.task(tasks.images, () => {
         .pipe(gulp.dest(dest))
 
     return gulp
-        .src("img/*.jpg")
+        .src("img/*.jp*g")
         .pipe(plugins.responsive({
             "*.*": [
                 {
