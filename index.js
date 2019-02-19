@@ -1,6 +1,8 @@
+
+/* global loadCSS, navigator, Reveal */
 const dataBase = "data-background"
 const imgBase = "img/"
-const defaultImageType = ".jpg"
+const defaultImageType = ".jpeg"
 
 const randomImageSelector = `${dataBase}-image-random`
 const videoSelector = `${dataBase}-video`
@@ -68,15 +70,17 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js")
 }
 
+const firstScript = document.getElementsByTagName("script")[0]
+
 loadCSS(
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css",
-    document.getElementsByTagName("script")[0]);
+    firstScript)
 
 loadCSS(
     "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css",
-    document.getElementsByTagName("script")[0]);
+    firstScript)
 
-loadCSS("/index.css", document.getElementsByTagName("script")[0]);
+loadCSS("/index.css", firstScript)
 
 Reveal.initialize({
     controls: true,
