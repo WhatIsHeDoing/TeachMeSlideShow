@@ -4,6 +4,8 @@
 [![Clone in Cloud9](https://img.shields.io/badge/Clone%20in-C9-blue.svg)][Cloud9]
 [![Known Vulnerabilities](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow/badge.svg)][Snyk]
 [![Greenkeeper badge](https://badges.greenkeeper.io/WhatIsHeDoing/TeachMeSlideShow.svg)][Greenkeeper]
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m782239566-cf468368187610dc48fb4728.svg)
+![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m782239566-cf468368187610dc48fb4728.svg)
 
 Learning through fun, interactive slideshows! https://alphabetslidesho.ws/
 
