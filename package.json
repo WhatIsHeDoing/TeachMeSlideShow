@@ -18,7 +18,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "3.7.0",
-    "reveal.js": "3.7.0"
+    "reveal.js": "3.8.0"
   },
   "devDependencies": {
     "browser-sync": "2.26.3",
