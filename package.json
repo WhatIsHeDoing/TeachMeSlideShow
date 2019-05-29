@@ -17,7 +17,7 @@
   "license": "Unlicense",
   "private": true,
   "dependencies": {
-    "animate.css": "3.7.0",
+    "animate.css": "3.7.1",
     "reveal.js": "3.8.0"
   },
   "devDependencies": {
