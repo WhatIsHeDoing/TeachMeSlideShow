@@ -1,8 +1,6 @@
 # Teach Me SlideShow
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5fc2c627-6ee6-459f-ae4e-eb847ed72ed7/deploy-status)][Netlify]
-[![Clone in Cloud9](https://img.shields.io/badge/Clone%20in-C9-blue.svg)][Cloud9]
-[![Known Vulnerabilities](https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow/badge.svg)][Snyk]
 [![Greenkeeper badge](https://badges.greenkeeper.io/WhatIsHeDoing/TeachMeSlideShow.svg)][Greenkeeper]
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m782239566-cf468368187610dc48fb4728.svg)
 ![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m782239566-cf468368187610dc48fb4728.svg)
@@ -13,17 +11,11 @@ Learning through fun, interactive slideshows! https://alphabetslidesho.ws/
 
 ## 🚀 Get Started
 
-## Cloud9
-
-Feel free to clone the [Cloud9] workspace and get started in your browser! 
-
-## Local Development
-
 Simply clone this repository and run:
 
 ```sh
-npm install
-npm start
+yarn install --frozen-lockfile
+yarn start
 ```
 
 This will fire up the slideshow within your default browser.
@@ -59,11 +51,9 @@ A **huge** thanks to [Pixabay] for the images used throughout the slideshow.
 
 [Animate.css]: https://daneden.github.io/animate.css/
 [Chunkfive]: https://www.fontsquirrel.com/fonts/chunkfive
-[Cloud9]: https://c9.io/whatishedoing/alphabet-slideshows
 [Favicon.io]: https://favicon.io/
 [Greenkeeper]: (https://greenkeeper.io/)
 [LICEcap]: https://www.cockos.com/licecap/
 [Netlify]: https://app.netlify.com/sites/animal-alphabet/deploys
 [Pixabay]: https://pixabay.com/
 [reveal.js]: http://lab.hakim.se/reveal-js/
-[Snyk]: https://snyk.io/test/github/WhatIsHeDoing/TeachMeSlideShow
