@@ -1,3 +1,6 @@
+temp
+coverage
+node_modules
+build
+
 *.log
-dist/
-node_modules/

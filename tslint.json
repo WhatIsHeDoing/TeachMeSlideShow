@@ -1,0 +1,18 @@
+{
+    "rules": {
+        "max-line-length": {
+            "options": [
+                120
+            ]
+        },
+        "no-arg": true,
+        "no-bitwise": true,
+        "no-conditional-assignment": true,
+        "no-consecutive-blank-lines": true,
+        "no-console": true,
+        "quotemark": [
+            true,
+            "double"
+        ]
+    }
+}

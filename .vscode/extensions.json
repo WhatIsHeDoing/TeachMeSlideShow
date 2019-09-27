@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ban.spellright",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+    ],
+    "unwantedRecommendations": []
+}
