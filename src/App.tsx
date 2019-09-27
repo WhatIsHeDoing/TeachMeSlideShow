@@ -49,13 +49,14 @@ export const App: React.FC = () => {
         }
     }
 
+    /** Swipes go the opposite direction to key presses! */
     const onSwiped = ({ dir }: EventData) => {
         if (dir === "Right") {
-            return changeSlide("right");
+            return changeSlide("left");
         }
 
         if (dir === "Left") {
-            return changeSlide("left");
+            return changeSlide("right");
         }
     }
 
