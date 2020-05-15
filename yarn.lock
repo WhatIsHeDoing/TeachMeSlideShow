@@ -1441,10 +1441,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-event-listener@0.4.9":
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/@types/react-event-listener/-/react-event-listener-0.4.9.tgz#7cd62145e78e80d1d427b061b29655d77248967a"
-  integrity sha512-IGC/0CSoqOBEj4D2RRkMlNMp84eAmzyDcLoeqqye8AtdPbmcfcdbHYeqAP+hK+MWw4o6+zuhysoLYUetmY3SBg==
+"@types/react-event-listener@0.4.10":
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/@types/react-event-listener/-/react-event-listener-0.4.10.tgz#567e0cac35e1178076ebdcf442e310cbba422928"
+  integrity sha512-cuNXe0tuA40J6sCWx+hcs4NXhBwBqS9ju/f1VlZ4ZFX7TLk6/WSOxhFcd2MmO3sijV4JVZT+CxHwNGE7F2ZLxg==
   dependencies:
     "@types/react" "*"
 
