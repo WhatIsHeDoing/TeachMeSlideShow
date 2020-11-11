@@ -8,7 +8,7 @@ import beaver from "../images/beaver.jpeg";
 import bee from "../images/bee.jpeg";
 import cat from "../images/cat.jpeg";
 import caterpillar from "../images/caterpillar.jpeg";
-import cheetah from "../images/caterpillar.jpeg";
+import cheetah from "../images/cheetah.jpeg";
 import dog from "../images/dog.jpeg";
 import dolphin from "../images/dolphin.jpeg";
 import duck from "../images/duck.jpeg";

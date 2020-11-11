@@ -1,8 +1,7 @@
 import { KEY_LEFT, KEY_RIGHT } from "keycode-js";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import EventListener from "react-event-listener";
-import { useSwipeable, EventData } from "react-swipeable";
-
+import { useSwipeable } from "react-swipeable";
 import "./App.css";
 import { alphabet } from "./slideshows/animals";
 import { randomArrayElement } from "./utils/random";
@@ -17,7 +16,7 @@ const animationClasses = [
     "tada"
 ];
 
-export const App: React.FC = () => {
+export const App: FC = () => {
     const [slideIndex, setSlideIndex] = useState(0);
     const [slide, setSlide] = useState(alphabet[slideIndex]);
     const [contents, setContents] = useState(randomArrayElement(slide.availableContents));
@@ -50,17 +49,17 @@ export const App: React.FC = () => {
     }
 
     /** Swipes go the opposite direction to key presses! */
-    const onSwiped = ({ dir }: EventData) => {
-        if (dir === "Right") {
-            return changeSlide("left");
-        }
+    const handlers = useSwipeable({
+        onSwiped: ({ dir }) => {
+            if (dir === "Right") {
+                return changeSlide("left");
+            }
 
-        if (dir === "Left") {
-            return changeSlide("right");
+            if (dir === "Left") {
+                return changeSlide("right");
+            }
         }
-    }
-
-    const handlers = useSwipeable({ onSwiped });
+    });
 
     return (
         <div className="App">

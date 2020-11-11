@@ -1,11 +1,10 @@
-import { Slide } from "../models/slide";
-
 import ayersRock from "../images/ayers-rock.jpeg";
 import bigBen from "../images/big-ben.jpeg";
 import capitolHill from "../images/capitol-hill.jpeg";
 import greatWallOfChina from "../images/great-wall-of-china.jpeg";
 import londonEye from "../images/london-eye.jpeg";
 import statueOfLliberty from "../images/statue-of-liberty.jpeg";
+import { Slide } from "../models/slide";
 
 export const alphabet: Slide[] = [
     {
