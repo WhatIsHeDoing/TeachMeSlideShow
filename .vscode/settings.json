@@ -14,5 +14,6 @@
     "spellright.language": [
         "en"
     ],
+    "spellright.notificationClass": "information",
     "typescript.tsdk": "node_modules\\typescript\\lib"
 }

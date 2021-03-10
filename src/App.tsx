@@ -1,5 +1,5 @@
 import { KEY_LEFT, KEY_RIGHT } from "keycode-js";
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import EventListener from "react-event-listener";
 import { useSwipeable } from "react-swipeable";
 import "./App.css";
