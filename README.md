@@ -14,8 +14,8 @@ Learning through fun, interactive slideshows! <https://alphabetslidesho.ws/>
 Simply clone this repository and run:
 
 ```sh
-yarn install --frozen-lockfile
-yarn start
+pnpm install
+pnpm start
 ```
 
 This will fire up the slideshow within your default browser.
@@ -23,11 +23,11 @@ This will fire up the slideshow within your default browser.
 Any changes you make within the HTML and TypeScript files will automagically reload the browser,
 so please play with it and start making your own slideshows.
 
-Don't have `npm` or `yarn` available? Try installing them using the following:
+If you do not have `pnpm` available, try installing it using the following:
 
-* Website: [Node.js]
-* [Chocolatey](https://chocolatey.org/) for Windows: `choco install nodejs-lts yarn`
-* [Fedora](https://getfedora.org/) Linux: `dnf install node.js yarn`
+* Website: [pnpm]
+* [Chocolatey](https://chocolatey.org/) for Windows: `choco install nodejs-lts pnpm`
+* [Fedora](https://getfedora.org/) Linux: `dnf install node.js pnpm`
 
 ## 🤝 Contributing
 
@@ -56,5 +56,5 @@ A **huge** thanks to [Pixabay] for the images used throughout the slideshow.
 [Greenkeeper]: (https://greenkeeper.io/)
 [LICEcap]: https://www.cockos.com/licecap/
 [Netlify]: https://app.netlify.com/sites/animal-alphabet/deploys
-[Node.js]: https://nodejs.org/en/
 [Pixabay]: https://pixabay.com/
+[pnpm]: https://pnpm.io/

@@ -5,7 +5,7 @@
     ],
     "search.exclude": {
         "node_modules": true,
-        "yarn.lock": true
+        "pnpm-lock.yaml": true
     },
     "spellright.documentTypes": [
         "markdown",

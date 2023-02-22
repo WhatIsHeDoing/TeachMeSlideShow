@@ -1,19 +1,19 @@
 [build]
-  command = "yarn install --frozen-lockfile ; yarn build"
-  publish = "build"
+command = "npm install pnpm ; pnpm install ; pnpm build"
+publish = "build"
 
 [build.environment]
-  NODE_VERSION = "10.16.0"
-  NPM_VERSION = "6.9.0"
-  YARN_VERSION = "1.17.3"
+NODE_VERSION = "10.16.0"
+NPM_VERSION = "6.9.0"
+YARN_VERSION = "1.17.3"
 
 [[headers]]
-    for = "/*"
+for = "/*"
 
-    [headers.values]
-    Referrer-Policy = "no-referrer-when-downgrade"
-    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "1; mode=block"
-    Server = "server"
+[headers.values]
+Referrer-Policy = "no-referrer-when-downgrade"
+Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "SAMEORIGIN"
+X-XSS-Protection = "1; mode=block"
+Server = "server"
