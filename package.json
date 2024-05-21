@@ -14,21 +14,25 @@
   },
   "dependencies": {
     "keycode-js": "3.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-event-listener": "0.6.6",
     "react-scripts": "5.0.1",
-    "react-swipeable": "7.0.0",
-    "typescript": "4.9.5"
+    "react-swipeable": "7.0.1",
+    "typescript": "5.4.5"
   },
   "description": "Slideshow education!",
   "devDependencies": {
-    "@types/jest": "29.4.0",
-    "@types/node": "18.14.0",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "@types/react-event-listener": "0.4.12",
-    "sharp": "0.31.3"
+    "@types/jest": "29.5.12",
+    "@types/node": "20.12.12",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.0",
+    "@types/react-event-listener": "0.4.15",
+    "sharp": "0.33.4"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "7.10.0",
+    "@typescript-eslint/parser": "7.10.0"
   },
   "engines": {
     "node": ">=14.19.0"
