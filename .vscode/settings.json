@@ -1,4 +1,18 @@
 {
+    "cSpell.words": [
+        "Chunkfive",
+        "dom",
+        "jello",
+        "js",
+        "LICEcap",
+        "Netlify",
+        "Pixabay",
+        "pnpm",
+        "slideshow",
+        "swipeable",
+        "tada",
+        "utils"
+    ],
     "editor.formatOnSave": true,
     "editor.rulers": [
         120
@@ -7,13 +21,5 @@
         "node_modules": true,
         "pnpm-lock.yaml": true
     },
-    "spellright.documentTypes": [
-        "markdown",
-        "typescriptreact"
-    ],
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.notificationClass": "information",
     "typescript.tsdk": "node_modules\\typescript\\lib"
 }

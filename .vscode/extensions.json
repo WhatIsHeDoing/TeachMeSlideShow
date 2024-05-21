@@ -1,7 +1,10 @@
 {
     "recommendations": [
-        "ban.spellright",
-        "ms-vscode.vscode-typescript-tslint-plugin"
+        "DavidAnson.vscode-markdownlint",
+        "EditorConfig.EditorConfig",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml"
     ],
     "unwantedRecommendations": []
 }
