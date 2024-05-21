@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5fc2c627-6ee6-459f-ae4e-eb847ed72ed7/deploy-status)][Netlify]
 
-Learning through fun, interactive slideshows! <https://alphabetslidesho.ws/>
+Learning through fun, interactive slideshows! <https://alphabet-slideshows.netlify.app/>
 
 ![Preview animation](/preview.gif)
 

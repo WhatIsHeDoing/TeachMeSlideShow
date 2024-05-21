@@ -34,9 +34,6 @@
     "@typescript-eslint/eslint-plugin": "7.10.0",
     "@typescript-eslint/parser": "7.10.0"
   },
-  "engines": {
-    "node": ">=14.19.0"
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
