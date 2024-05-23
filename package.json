@@ -1,5 +1,8 @@
 {
-  "author": "WhatIsHeDoing",
+  "author": {
+    "name": "Darren Hickling",
+    "url": "https://github.com/WhatIsHeDoing/TeachMeSlideShow"
+  },
   "browserslist": {
     "development": [
       "last 1 chrome version",
@@ -28,19 +31,23 @@
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
     "@types/react-event-listener": "0.4.15",
+    "browserslist": "4.23.0",
     "sharp": "0.33.4"
   },
   "resolutions": {
     "@typescript-eslint/eslint-plugin": "7.10.0",
-    "@typescript-eslint/parser": "7.10.0"
+    "@typescript-eslint/parser": "7.10.0",
+    "browserslist": "4.23.0"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "keywords": [
     "education",
+    "fun",
+    "react",
     "slideshow",
-    "fun"
+    "typescript"
   ],
   "license": "Unlicense",
   "name": "alphabet-slideshows",
@@ -49,7 +56,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "update:browsers": "pnpm exec browserslist --update-db"
   },
   "version": "2.0.0"
 }

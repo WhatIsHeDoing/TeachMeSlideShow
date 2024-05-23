@@ -1,4 +1,4 @@
-import { KEY_LEFT, KEY_RIGHT } from "keycode-js";
+import { CODE_LEFT, CODE_RIGHT } from "keycode-js";
 import { FC, useState } from "react";
 import EventListener from "react-event-listener";
 import { useSwipeable } from "react-swipeable";
@@ -23,13 +23,9 @@ export const App: FC = () => {
     const [animation, setAnimation] = useState(randomArrayElement(animationClasses));
 
     const changeSlide = (direction: "left" | "right") => {
-        let newSlideIndex = slideIndex;
-
-        if (direction === "right") {
-            newSlideIndex = slideIndex >= alphabet.length - 1 ? 0 : slideIndex + 1;
-        } else {
-            newSlideIndex = slideIndex <= 0 ? alphabet.length - 1 : slideIndex - 1;
-        }
+        const newSlideIndex = direction === "right"
+            ? (slideIndex >= alphabet.length - 1 ? 0 : slideIndex + 1)
+            : (slideIndex < 1 ? alphabet.length - 1 : slideIndex - 1);
 
         setSlideIndex(newSlideIndex);
         const nextSlide = alphabet[newSlideIndex];
@@ -38,25 +34,21 @@ export const App: FC = () => {
         setAnimation(randomArrayElement(animationClasses));
     };
 
-    const onKeyDown = (event: KeyboardEvent) => {
-        if (event.keyCode === KEY_RIGHT) {
-            return changeSlide("right");
-        }
-
-        if (event.keyCode === KEY_LEFT) {
-            return changeSlide("left");
+    const onKeyDown = ({ code }: KeyboardEvent) => {
+        switch (code) {
+            case CODE_RIGHT: return changeSlide("right");
+            case CODE_LEFT: return changeSlide("left");
+            default: return;
         }
     }
 
     /** Swipes go the opposite direction to key presses! */
     const handlers = useSwipeable({
         onSwiped: ({ dir }) => {
-            if (dir === "Right") {
-                return changeSlide("left");
-            }
-
-            if (dir === "Left") {
-                return changeSlide("right");
+            switch (dir) {
+                case "Right": return changeSlide("left");
+                case "Left": return changeSlide("right");
+                default: return;
             }
         }
     });
