@@ -3,7 +3,6 @@
         "DavidAnson.vscode-markdownlint",
         "dbaeumer.vscode-eslint",
         "EditorConfig.EditorConfig",
-        "ms-vscode.vscode-typescript-tslint-plugin",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml"
     ],
