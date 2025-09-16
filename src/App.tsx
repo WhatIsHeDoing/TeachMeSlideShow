@@ -19,13 +19,22 @@ const animationClasses = [
 export const App: FC = () => {
     const [slideIndex, setSlideIndex] = useState(0);
     const [slide, setSlide] = useState(alphabet[slideIndex]);
-    const [contents, setContents] = useState(randomArrayElement(slide.availableContents));
-    const [animation, setAnimation] = useState(randomArrayElement(animationClasses));
+    const [contents, setContents] = useState(
+        randomArrayElement(slide.availableContents)
+    );
+    const [animation, setAnimation] = useState(
+        randomArrayElement(animationClasses)
+    );
 
     const changeSlide = (direction: "left" | "right") => {
-        const newSlideIndex = direction === "right"
-            ? (slideIndex >= alphabet.length - 1 ? 0 : slideIndex + 1)
-            : (slideIndex < 1 ? alphabet.length - 1 : slideIndex - 1);
+        const newSlideIndex =
+            direction === "right"
+                ? slideIndex >= alphabet.length - 1
+                    ? 0
+                    : slideIndex + 1
+                : slideIndex < 1
+                  ? alphabet.length - 1
+                  : slideIndex - 1;
 
         setSlideIndex(newSlideIndex);
         const nextSlide = alphabet[newSlideIndex];
@@ -36,19 +45,25 @@ export const App: FC = () => {
 
     const onKeyDown = ({ code }: KeyboardEvent) => {
         switch (code) {
-            case CODE_RIGHT: return changeSlide("right");
-            case CODE_LEFT: return changeSlide("left");
-            default: return;
+            case CODE_RIGHT:
+                return changeSlide("right");
+            case CODE_LEFT:
+                return changeSlide("left");
+            default:
+                return;
         }
-    }
+    };
 
     /** Swipes go the opposite direction to key presses! */
     const handlers = useSwipeable({
         onSwiped: ({ dir }) => {
             switch (dir) {
-                case "Right": return changeSlide("left");
-                case "Left": return changeSlide("right");
-                default: return;
+                case "Right":
+                    return changeSlide("left");
+                case "Left":
+                    return changeSlide("right");
+                default:
+                    return;
             }
         }
     });
@@ -56,14 +71,20 @@ export const App: FC = () => {
     return (
         <div className="App">
             <EventListener target="window" onKeyDown={onKeyDown} />
-            <section {...handlers} style={{ backgroundImage: `url(${contents.image})` }}>
-                <p className={`animated infinite ${animation}`} title={contents.name}>
+            <section
+                {...handlers}
+                style={{ backgroundImage: `url(${contents.image})` }}
+            >
+                <p
+                    className={`animated infinite ${animation}`}
+                    title={contents.name}
+                >
                     {slide.letter.toUpperCase()}
                     {slide.letter}
                 </p>
-                {contents.description && <p className="description">
-                    {contents.description}
-                </p>}
+                {contents.description && (
+                    <p className="description">{contents.description}</p>
+                )}
             </section>
         </div>
     );

@@ -14,11 +14,16 @@
         "tada",
         "utils"
     ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.biome": "explicit",
+        "source.organizeImports.biome": "explicit"
+    },
     "editor.formatOnSave": true,
     "editor.rulers": [
         120
     ],
     "search.exclude": {
+        "dist": true,
         "node_modules": true,
         "pnpm-lock.yaml": true
     },

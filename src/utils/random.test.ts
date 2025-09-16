@@ -1,4 +1,4 @@
-import { expect, describe, it } from 'vitest'
+import { describe, expect, it } from "vitest";
 import { randomArrayElement, randomNumberBetween } from "./random";
 
 describe("randomNumberBetween", () => {
@@ -42,7 +42,11 @@ describe("randomNumberBetween", () => {
         const min = 1;
         const max = 10;
 
-        const results = new Set(Array.from({ length: 100 }, (_x, _i) => randomNumberBetween(min, max)));
+        const results = new Set(
+            Array.from({ length: 100 }, (_x, _i) =>
+                randomNumberBetween(min, max)
+            )
+        );
 
         // It is highly unlikely all 100 numbers will be the same.
         expect(results.size).toBeGreaterThan(1);
@@ -81,7 +85,9 @@ describe("randomArrayElement", () => {
     it("returns different elements on subsequent calls", () => {
         const array = Array.from({ length: 100 }, (_x, i) => i);
 
-        const results = new Set(Array.from({ length: 100 }, (_x, _i) => randomArrayElement(array)));
+        const results = new Set(
+            Array.from({ length: 100 }, (_x, _i) => randomArrayElement(array))
+        );
 
         // It is highly unlikely all 100 numbers will be the same.
         expect(results.size).toBeGreaterThan(1);

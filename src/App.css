@@ -16,13 +16,13 @@
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 15em;
     height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    -webkit-text-stroke: 2px rgba(50, 50, 50, .7);
+    -webkit-text-stroke: 2px rgba(50, 50, 50, 0.7);
 }
 
 .App .description {

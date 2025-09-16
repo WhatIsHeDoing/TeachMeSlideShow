@@ -49,7 +49,8 @@ export const alphabet: Slide[] = [
             {
                 image: londonEye,
                 name: "London Eye",
-                description: "The London Eye is an observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3.75 million visitors annually. "
+                description:
+                    "The London Eye is an observation wheel on the South Bank of the River Thames in London. It is Europe's tallest cantilevered observation wheel, and is the most popular paid tourist attraction in the United Kingdom with over 3.75 million visitors annually. "
             }
         ]
     },
@@ -61,5 +62,5 @@ export const alphabet: Slide[] = [
                 name: "Statue of Liberty"
             }
         ]
-    },
+    }
 ];

@@ -17,6 +17,7 @@
   },
   "description": "Slideshow education!",
   "devDependencies": {
+    "@biomejs/biome": "2.2.4",
     "@types/node": "20.12.12",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
@@ -25,9 +26,6 @@
     "jsdom": "27.0.0",
     "sharp": "0.33.4",
     "vitest": "3.2.4"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "keywords": [
     "education",
@@ -40,9 +38,11 @@
   "name": "alphabet-slideshows",
   "private": true,
   "scripts": {
-    "start": "vite",
     "build": "tsc && vite build",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
     "serve": "vite preview",
+    "start": "vite",
     "test": "vitest"
   },
   "version": "3.0.0"

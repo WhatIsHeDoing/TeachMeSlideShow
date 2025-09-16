@@ -1,10 +1,10 @@
 {
-    "recommendations": [
-        "DavidAnson.vscode-markdownlint",
-        "dbaeumer.vscode-eslint",
-        "EditorConfig.EditorConfig",
-        "streetsidesoftware.code-spell-checker",
-        "tamasfe.even-better-toml"
-    ],
-    "unwantedRecommendations": []
+	"recommendations": [
+		"biomejs.biome",
+		"DavidAnson.vscode-markdownlint",
+		"EditorConfig.EditorConfig",
+		"streetsidesoftware.code-spell-checker",
+		"tamasfe.even-better-toml"
+	],
+	"unwantedRecommendations": []
 }
