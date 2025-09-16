@@ -1,3 +1,4 @@
+import { expect, describe, it } from 'vitest'
 import { randomArrayElement, randomNumberBetween } from "./random";
 
 describe("randomNumberBetween", () => {

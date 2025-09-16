@@ -36,7 +36,7 @@ As ever, this was assembled quickly using the following open source and free tec
 * Favicon: [Favicon.io]
 * Font: [Chunkfive] via Font Squirrel
 * Preview GIF: [LICEcap]
-* React: [Create React App]
+* React: [Vite]
 
 ### 📸 Images
 
@@ -44,10 +44,10 @@ A **huge** thanks to [Pixabay] for the images used throughout the slideshow.
 
 [Animate.css]: https://daneden.github.io/animate.css/
 [Chunkfive]: https://www.fontsquirrel.com/fonts/chunkfive
-[Create React App]: https://github.com/facebook/create-react-app
 [Favicon.io]: https://favicon.io/
 [LICEcap]: https://www.cockos.com/licecap/
 [Netlify]: https://app.netlify.com/sites/animal-alphabet/deploys
 [Pixabay]: https://pixabay.com/
 [pnpm]: https://pnpm.io/
 [setup scripts]: https://github.com/WhatIsHeDoing/Setup
+[Vite]: https://vite.dev/

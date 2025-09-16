@@ -1,8 +1,7 @@
 /**
- * Rezizes images to a max width and compresses them.
+ * Resizes images to a max width and compresses them.
  * These can then be copied to the `images` directory;
- * this script cannot do so, due to open files handles,
- * and there does not seem to be a good method using `create-react-app` 🤷‍
+ * this script cannot do so, due to open files handles`
  */
 
 const fs = require("fs")

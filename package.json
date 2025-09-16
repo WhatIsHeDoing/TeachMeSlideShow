@@ -3,41 +3,28 @@
     "name": "Darren Hickling",
     "url": "https://github.com/WhatIsHeDoing/TeachMeSlideShow"
   },
-  "browserslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ]
-  },
   "dependencies": {
+    "@vitejs/plugin-react-swc": "4.0.1",
     "keycode-js": "3.1.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-event-listener": "0.6.6",
-    "react-scripts": "5.0.1",
     "react-swipeable": "7.0.1",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "vite": "7.1.5",
+    "vite-plugin-svgr": "4.5.0",
+    "vite-tsconfig-paths": "5.1.4"
   },
   "description": "Slideshow education!",
   "devDependencies": {
-    "@types/jest": "29.5.12",
     "@types/node": "20.12.12",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
     "@types/react-event-listener": "0.4.15",
-    "browserslist": "4.23.0",
-    "sharp": "0.33.4"
-  },
-  "resolutions": {
-    "@typescript-eslint/eslint-plugin": "7.10.0",
-    "@typescript-eslint/parser": "7.10.0",
-    "browserslist": "4.23.0"
+    "@vitest/coverage-v8": "3.2.4",
+    "jsdom": "27.0.0",
+    "sharp": "0.33.4",
+    "vitest": "3.2.4"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,11 +40,10 @@
   "name": "alphabet-slideshows",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "update:browsers": "pnpm exec browserslist --update-db"
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "vitest"
   },
-  "version": "2.0.0"
+  "version": "3.0.0"
 }
