@@ -1,6 +1,6 @@
 # Teach Me SlideShow
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5fc2c627-6ee6-459f-ae4e-eb847ed72ed7/deploy-status)][Netlify]
+[![build](https://github.com/WhatIsHeDoing/TeachMeSlideShow/actions/workflows/build.yml/badge.svg)](https://github.com/WhatIsHeDoing/TeachMeSlideShow/actions/workflows/build.yml)
 
 Learning through fun, interactive slideshows! <https://alphabet-slideshows.netlify.app/>
 
