@@ -1,0 +1,11 @@
+ignorePaths:
+    - biome.json
+    - pnpm-lock.yaml
+ignoreWords:
+    - Chunkfive
+    - esbuild
+    - Pixabay
+language: en-GB,en
+useGitignore: true
+words:
+    - swipeable

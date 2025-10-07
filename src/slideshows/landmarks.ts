@@ -3,7 +3,7 @@ import bigBen from "../images/big-ben.jpeg";
 import capitolHill from "../images/capitol-hill.jpeg";
 import greatWallOfChina from "../images/great-wall-of-china.jpeg";
 import londonEye from "../images/london-eye.jpeg";
-import statueOfLliberty from "../images/statue-of-liberty.jpeg";
+import statueOfLiberty from "../images/statue-of-liberty.jpeg";
 import { Slide } from "../models/slide";
 
 export const alphabet: Slide[] = [
@@ -58,7 +58,7 @@ export const alphabet: Slide[] = [
         letter: "s",
         availableContents: [
             {
-                image: statueOfLliberty,
+                image: statueOfLiberty,
                 name: "Statue of Liberty"
             }
         ]
