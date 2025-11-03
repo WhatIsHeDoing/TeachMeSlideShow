@@ -1,0 +1,19 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+[build]
+base = "/"
+command = "pnpm run ci"
+publish = "dist"
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Referrer-Policy = "no-referrer-when-downgrade"
+Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "SAMEORIGIN"
+X-XSS-Protection = "1; mode=block"
+Server = "server"
+
+[functions]
+node_bundler = "esbuild"

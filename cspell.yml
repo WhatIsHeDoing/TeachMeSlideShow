@@ -4,7 +4,9 @@ ignorePaths:
 ignoreWords:
     - Chunkfive
     - esbuild
+    - nosniff
     - Pixabay
+    - SAMEORIGIN
 language: en-GB,en
 useGitignore: true
 words:
