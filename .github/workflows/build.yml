@@ -3,7 +3,7 @@ name: build
 on:
     push:
         branches:
-            - main
+            - live
     pull_request:
     workflow_dispatch:
 
@@ -12,16 +12,14 @@ env:
 
 jobs:
     build:
-        # https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
+        # https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md
         runs-on: ubuntu-24.04
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v5
 
             - name: Install pnpm
               uses: pnpm/action-setup@v4
-              with:
-                  version: latest
 
             - name: Install dependencies
               run: pnpm install
