@@ -25,10 +25,10 @@ jobs:
             - name: Run the CI script
               run: pnpm run ci
 
-            - env:
+            - name: Approve the Dependabot PR
+              env:
                   GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
                   PR_URL: ${{github.event.pull_request.html_url}}
-              name: Approve the Dependabot PR
               run: gh pr review --approve "$PR_URL"
 
 name: Dependabot auto-approve
