@@ -3,6 +3,7 @@ ignorePaths:
     - pnpm-lock.yaml
 ignoreWords:
     - Chunkfive
+    - commitlint
     - esbuild
     - nosniff
     - Pixabay
