@@ -12,3 +12,4 @@ language: en-GB,en
 useGitignore: true
 words:
     - swipeable
+    - Vite

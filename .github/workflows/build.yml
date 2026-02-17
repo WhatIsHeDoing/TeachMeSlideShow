@@ -4,7 +4,31 @@ on:
     push:
         branches:
             - live
+        paths:
+            - ".github/workflows/build.yml"
+            - "biome.json"
+            - "commitlint.config.ts"
+            - "cspell.yml"
+            - "index.html"
+            - "package.json"
+            - "pnpm-*.yaml"
+            - "public/**"
+            - "src/**"
+            - "tsconfig.json"
+            - "vite*.*.ts"
     pull_request:
+        paths:
+            - ".github/workflows/build.yml"
+            - "biome.json"
+            - "commitlint.config.ts"
+            - "cspell.yml"
+            - "index.html"
+            - "package.json"
+            - "pnpm-*.yaml"
+            - "public/**"
+            - "src/**"
+            - "tsconfig.json"
+            - "vite*.*.ts"
     workflow_dispatch:
 
 env:
