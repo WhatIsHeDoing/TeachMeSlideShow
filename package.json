@@ -4,7 +4,7 @@
     "url": "https://darrenhickling.com"
   },
   "dependencies": {
-    "@vitejs/plugin-react-swc": "4.2.3",
+    "@vitejs/plugin-react-swc": "4.3.0",
     "keycode-js": "3.1.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
@@ -17,21 +17,21 @@
   },
   "description": "Slideshow education!",
   "devDependencies": {
-    "@biomejs/biome": "2.4.4",
-    "@commitlint/cli": "20.4.2",
-    "@commitlint/config-conventional": "20.4.2",
-    "@types/node": "25.2.3",
+    "@biomejs/biome": "2.4.8",
+    "@commitlint/cli": "20.4.4",
+    "@commitlint/config-conventional": "20.4.4",
+    "@types/node": "25.5.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@types/react-event-listener": "0.4.15",
-    "@vitest/coverage-v8": "4.0.18",
-    "cspell": "9.6.4",
+    "@vitest/coverage-v8": "4.1.0",
+    "cspell": "9.7.0",
     "husky": "9.1.7",
     "jsdom": "28.1.0",
-    "lint-staged": "16.2.7",
+    "lint-staged": "16.4.0",
     "npm-run-all": "4.1.5",
     "sharp": "0.34.5",
-    "vitest": "4.0.18"
+    "vitest": "4.1.0"
   },
   "keywords": [
     "education",
