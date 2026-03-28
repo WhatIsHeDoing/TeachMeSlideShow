@@ -11,5 +11,6 @@ ignoreWords:
 language: en-GB,en
 useGitignore: true
 words:
+    - cooldown
     - swipeable
     - Vite
