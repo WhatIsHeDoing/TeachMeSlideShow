@@ -11,27 +11,27 @@
     "react-event-listener": "0.6.7",
     "react-swipeable": "7.0.2",
     "typescript": "5.9.3",
-    "vite": "8.0.9",
+    "vite": "8.0.10",
     "vite-plugin-svgr": "4.5.0",
     "vite-tsconfig-paths": "6.1.1"
   },
   "description": "Slideshow education!",
   "devDependencies": {
-    "@biomejs/biome": "2.4.12",
-    "@commitlint/cli": "20.5.0",
+    "@biomejs/biome": "2.4.13",
+    "@commitlint/cli": "20.5.2",
     "@commitlint/config-conventional": "20.5.0",
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@types/react-event-listener": "0.4.15",
-    "@vitest/coverage-v8": "4.1.4",
+    "@vitest/coverage-v8": "4.1.5",
     "cspell": "9.8.0",
     "husky": "9.1.7",
     "jsdom": "29.0.2",
     "lint-staged": "16.4.0",
     "npm-run-all": "4.1.5",
     "sharp": "0.34.5",
-    "vitest": "4.1.4"
+    "vitest": "4.1.5"
   },
   "keywords": [
     "education",
