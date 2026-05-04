@@ -9,7 +9,7 @@ jobs:
 
         steps:
             - name: Fetch the Dependabot metadata
-              uses: dependabot/fetch-metadata@v3.0.0
+              uses: dependabot/fetch-metadata@v3.1.0
               with:
                   github-token: "${{ secrets.GITHUB_TOKEN }}"
 
@@ -17,7 +17,7 @@ jobs:
               uses: actions/checkout@v6.0.2
 
             - name: Install pnpm
-              uses: pnpm/action-setup@v6.0.0
+              uses: pnpm/action-setup@v6.0.1
 
             - name: Install dependencies
               run: pnpm install
