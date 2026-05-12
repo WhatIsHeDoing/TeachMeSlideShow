@@ -58,7 +58,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,json,css}": "biome check",
+    "src/**/*.{ts,tsx,js,json,css}": "biome check",
     "**/*": "cspell --no-must-find-files"
   },
   "version": "3.0.0"
