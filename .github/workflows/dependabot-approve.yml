@@ -31,17 +31,38 @@ jobs:
             - name: Run the CI script
               run: pnpm run ci
 
+            - name: Check whether the PR touches workflow files
+              id: workflow-changes
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PR_URL: ${{ github.event.pull_request.html_url }}
+              run: |
+                  if gh pr view "$PR_URL" --json files --jq '.files[].path' | grep -q '^\.github/workflows/'; then
+                      echo "changed=true" >> "$GITHUB_OUTPUT"
+                  else
+                      echo "changed=false" >> "$GITHUB_OUTPUT"
+                  fi
+
             - name: Approve the Dependabot PR
+              if: steps.workflow-changes.outputs.changed == 'false'
               env:
                   GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
                   PR_URL: ${{github.event.pull_request.html_url}}
               run: gh pr review --approve "$PR_URL"
 
-            - env:
+            - name: Merge and delete the branch
+              if: steps.workflow-changes.outputs.changed == 'false'
+              env:
                   GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
                   PR_URL: ${{github.event.pull_request.html_url}}
-              name: Merge and delete the branch
               run: gh pr merge --squash --delete-branch "$PR_URL"
+
+            - name: Flag PRs that touch workflow files for manual review
+              if: steps.workflow-changes.outputs.changed == 'true'
+              env:
+                  GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+                  PR_URL: ${{github.event.pull_request.html_url}}
+              run: gh pr comment "$PR_URL" --body "Auto-merge skipped because this PR modifies files under \`.github/workflows/\`. GitHub blocks \`GITHUB_TOKEN\` from merging workflow changes, so this needs a manual review and merge."
 
 name: Dependabot auto-approve
 
