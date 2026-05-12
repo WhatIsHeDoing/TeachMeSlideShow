@@ -6,6 +6,7 @@ ignoreWords:
     - commitlint
     - esbuild
     - nosniff
+    - nvmrc
     - Pixabay
     - SAMEORIGIN
 language: en-GB,en

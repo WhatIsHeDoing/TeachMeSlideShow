@@ -10,12 +10,15 @@
     "react-dom": "19.2.5",
     "react-event-listener": "0.6.7",
     "react-swipeable": "7.0.2",
-    "typescript": "5.9.3",
+    "typescript": "6.0.2",
     "vite": "8.0.10",
-    "vite-plugin-svgr": "4.5.0",
+    "vite-plugin-svgr": "5.2.0",
     "vite-tsconfig-paths": "6.1.1"
   },
   "description": "Slideshow education!",
+  "engines": {
+    "node": ">=24.15.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "2.4.13",
     "@commitlint/cli": "20.5.2",
@@ -25,7 +28,7 @@
     "@types/react-dom": "19.2.3",
     "@types/react-event-listener": "0.4.15",
     "@vitest/coverage-v8": "4.1.5",
-    "cspell": "9.8.0",
+    "cspell": "10.0.0",
     "husky": "9.1.7",
     "jsdom": "29.0.2",
     "lint-staged": "16.4.0",
@@ -58,7 +61,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,json,css}": "biome check",
+    "src/**/*.{ts,tsx,js,json,css}": "biome check",
     "**/*": "cspell --no-must-find-files"
   },
   "version": "3.0.0"
