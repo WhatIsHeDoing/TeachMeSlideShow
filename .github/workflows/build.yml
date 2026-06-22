@@ -41,7 +41,7 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - name: Checkout
-              uses: actions/checkout@v6.0.2
+              uses: actions/checkout@v6.0.3
 
             - name: Install pnpm
               uses: pnpm/action-setup@v6.0.8
