@@ -14,10 +14,10 @@ jobs:
                   github-token: "${{ secrets.GITHUB_TOKEN }}"
 
             - name: Checkout
-              uses: actions/checkout@v6.0.2
+              uses: actions/checkout@v6.0.3
 
             - name: Install pnpm
-              uses: pnpm/action-setup@v6.0.8
+              uses: pnpm/action-setup@v6.0.9
 
             - name: Install Node.js
               uses: actions/setup-node@v6.4.0
